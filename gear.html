@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+		<!-- should do all this for one page then copy to every other page -->
+		<title> badminton website </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- space for fonts + linking features -->
+		<!-- page icon -->
+		<link rel="icon" type="image/png" href="images/badminton-img.png">
+		<!-- font linking -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- fonts -->
+		<!-- probably not needed due to import on the main style.css file
+		<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+		-->
+
+	</head>
+
+
+	<body>
+		<!-- might include a div to surround the header, main, and footer values-->
+			<header class="section-header">
+				<p> badminton website </p>
+			</header>
+      <!--the navbar, try to make it always visibile when scrolling using the sticky function-->
+      <nav id="navbar">
+        <!--
+				<a href="--"> filler space above the navbar that also moves </a> -->
+				<ul class="nav-links"> 
+					<!-- might need to make a grid so each box is equally spaced -->
+					<li class="box-nav-1a"><a href="index.html" class="page" id="home"> home </a></li>
+					<!-- filler pages for now-->
+					<li class="box-nav-2a"><a href="gear.html" class="active page drop-button" id="--"> gear </a>
+						<div class="dropdown-content">
+							<a href="gear-1.html"> rackets </a>
+							<a href="gear-2.html"> shuttles </a>
+							<a href="gear-3.html"> shoes </a>
+						</div>
+					</li>
+					<li class="box-nav-3a"><a href="how-to-play.html" class="page" id="--"> how to play </a></li>
+					<li class="box-nav-4a"><a href="famous-athletes.html" class="page" id="--"> famous athletes </a></li>
+					<li class="box-nav-5a"><a href="competitions.html" class="page" id="--"> competitions </a></li>
+					<!-- end of filer pages for now-->
+					<li class="box-nav-8a"><a href="colours.html" class="page" id="--"> colours palette </a></li>
+				</ul>
+      </nav>
+
+			<main class="gear-main-whole-box">
+				<div class="gear-main-header">
+					<h1 class="gear-main-h1"> 
+						gear
+					</h1>
+					<p class="gear-main-header-text"> for more info, click on the icons </p>
+				</div>
+				<div class="gear-main-info">
+
+					<div class="gear-main-grid"> 
+						<div class="gear-main-rackets">
+							<div class="header-container"> 
+								<span class="spacer"> </span>
+								<h3> Racket	 </h3>
+								<a href="gear-1.html"><img src="icons/badminton-racket-icon.png" class="gear-main-icon"> </a>
+							</div>
+							
+							<p> A specialized, lightweight, and somewhat durable tool designed for striking a shuttlecock across the net. </p>
+							<br>
+							<div class="gear-main-image-frame">
+								<img src="images/badminton-Yonex-astrox-88d-pro.png" alt="badminton racket" class="gear-main-img" id="gear-img-racket">
+							</div>
+						</div>
+					</div>
+
+					<div class="gear-main-grid"> 
+						<div class="gear-main-shuttlecock">
+							<div class="header-container"> 
+								<span class="spacer"> </span>
+								<h3> Shuttlecock </h3>
+								<a href="gear-2.html"><img src="icons/badminton-shuttlecock-icon.png" class="gear-main-icon"> </a>
+							</div>
+							
+							<p> An object with an open conical shape designed to be hit across the court. Usually made of feathers, plastic, or hybird materials. </p>
+							<br>
+							<div class="gear-main-image-frame">
+								<img src="images/badminton-Yonex-shuttles.png" alt="badminton shuttles" class="gear-main-img" id="">
+							</div>
+						</div>
+					</div>
+
+					<div class="gear-main-grid"> 
+						<div class="gear-main-shoes">
+							<div class="header-container">
+								<span class="spacer"> </span>
+								<h3> Shoes </h3>
+								<a href="gear-3.html"><img src="icons/badminton-shoes-icon.png" class="gear-main-icon"> </a>
+							</div>
+							
+							<p> A specialized indoor court footwear designed for quick, explosive, and repetitive movements on the court 								
+							</p>
+							<br>
+							<div class="gear-main-image-frame">
+								<img src="images/badminton-Yonex-shoes.png" alt="badminton shoes" class="gear-main-img" id="">
+							</div>
+						</div>
+					</div>
+        </div>
+			</main>
+
+			<footer>
+				<p>&copy; Badminton Website </p>
+				<p><a href="https://www.flaticon.com/free-icons/badminton" title="badminton icons"> Badminton icons created by Astatine - Flaticon</a> </p>
+				<p><a href="https://www.flaticon.com/free-icons/rule" title="rule icons">Rule icons created by Nhor Phai - Flaticon</a> </p>
+				<p><a href="https://www.flaticon.com/free-icons/footwear" title="footwear icons">Footwear icons created by Smashicons - Flaticon</a></p>
+				<p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a></p>
+			</footer>
+	</body>
+
+</html>

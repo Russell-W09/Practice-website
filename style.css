@@ -1,0 +1,710 @@
+/* #region filler-stuff-for-files */
+/* Patrick Hand */
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+/* Story Script */
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+/* Oswald */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+/* #endregion */
+
+
+* {
+  /* should design the website before screwing up the looks */
+  /* change margin and padding to 0px afterwards */
+  
+  
+  margin: 2px;
+  padding: 2px;
+  box-sizing: border-box;
+  border: 2px solid red;
+  
+  
+  /*
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: 0px solid black;
+  */
+  
+}
+
+
+
+/* for variables/functions later on */   
+
+    :root { 
+      
+      /* base colour option 1 */
+      --base-colour-1a: #FCF7F8; 
+      --base-colour-2a: #CED3DC; 
+      --base-colour-3a: #ABA9C3; 
+      --base-colour-4a: #275DAD; 
+      --base-colour-5a: #5B616A; 
+      
+
+      /* base colour option 2 */
+      --base-colour-1b: #2E7B28; 
+      --base-colour-2b: #3C5C74; 
+      --base-colour-3b: #4F5ADE; 
+      --base-colour-4b: #E4ECF1; 
+      
+
+      /* base colour option 3 */
+      --base-colour-1c: #A7CECB; 
+      --base-colour-2c: #8BA6A9; 
+      --base-colour-3c: #75704E; 
+      --base-colour-4c: #CACC90; 
+      --base-colour-5c: #F4EBBE; 
+      
+
+      /* base colour option 4 */
+      --base-colour-1d: #CBE896; 
+      --base-colour-2d: #AAC0AA; 
+      --base-colour-3d: #FCDFA6; 
+      --base-colour-4d: #A18276; 
+      --base-colour-5d: #F4B886; 
+      
+
+      /* base colour option 5 */
+      --base-colour-1e: #555B6E; 
+      --base-colour-2e: #89B0AE;
+      --base-colour-3e: #BEE3DB;
+      --base-colour-4e: #FAF9F9; 
+      --base-colour-5e: #FFD6BA; 
+      
+      /* base colour option 6 */
+      --base-colour-1f: #247BA0; 
+      --base-colour-2f: #70C1B3;
+      --base-colour-3f: #B2DBBF;
+      --base-colour-4f: #F3FFBD; 
+      --base-colour-5f: #FF1654; 
+      
+      /* base colour option 7 */
+      --base-colour-1g: #0D1821; 
+      --base-colour-2g: #344966;
+      --base-colour-3g: #B4CDED;
+      --base-colour-4g: #F0F4EF; 
+      --base-colour-5g: #BFCC94; 
+
+      /* fonts can be adjusted so it'll affect all using it */
+      .patrick-hand-regular {
+        font-family: "Patrick Hand", cursive;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      .story-script-regular {
+        font-family: "Story Script", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+
+
+    }
+	
+
+    body {
+
+    }
+
+    h1{
+    
+    } 
+    
+    header{
+      background-color: lightgreen;
+      justify-items: center;
+      align-content: center;
+      font-size: 150px;
+      padding: 30px;
+      font-family: "Oswald", sans-serif;
+      color: white;
+      text-transform: uppercase;
+      
+    }
+
+ 
+    /* navigation bar styling */ 
+    /* #region navigation bar styling */
+    
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+    }
+
+    nav ul {
+      list-style-type: none;
+      overflow: hidden;
+      justify-content: space-evenly;
+      background-color: var(--base-colour-2g);
+      display: grid;
+      /* this needs to be adjusted for the final bits/editing */
+      grid-template-columns: repeat(6, 1fr);
+      /* this padding puts distance around the listed items */
+      padding: 0px;
+    }
+
+    nav ul li {
+      /* this doesn't work to make the highlight part go slow 
+      transition: color 5.0s ease-in 2s; */
+      display: inline-block;
+      font-weight: bold;
+      white-space: no-wrap;
+      /* this makes a box around the listed item
+      padding: 10px 10px; */
+      background-color: var(--base-colour-2g); /* might need to make a grid to make each one to have even space */
+      border-right: 4px solid black; /* hard to see for now but is a divider */
+      /* this padding puts some height on the bottom and top of the li a */
+      padding: 0px 0px;
+    }
+
+    nav ul li:last-child{
+      border-right: none;
+    }
+
+    nav ul li a {
+      display: block;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      padding: 30px 30px;
+      transition: transform 0.2s ease-out;
+      
+      
+      /* might need later to help remove features off of the thing
+      text-decoration: none; */
+    }
+
+    nav ul li a .drop-button { 
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+    }
+    
+    /* used by w3schools demo
+    nav ul li a:hover, .box-nav-2a:hover .drop-button {
+      background-color: red;
+    }
+    */
+
+    li.box-nav-2a {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--base-colour-2g);
+      /* this value needs to scale with the page when it changes size/resolution
+      min-width: 317px;
+      */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    /* the a.active has to be before a:hover due to specificity rules or something */
+    nav ul li .active {
+      background-color: var(--base-colour-5g); 
+    }
+
+    nav ul li a:hover {
+      background-color: var(--base-colour-4g);
+      color: var(--base-colour-1g );
+      transform: translateX(-5px);
+    } 
+
+    .dropdown-content a:hover {
+      background-color: var(--base-colour-4g);
+      color: var(--base-colour-1g );
+    }
+
+    .box-nav-2a:hover .dropdown-content {
+      display: block;
+    }
+
+    /* #endregion */
+
+    /* footer styling */
+    /* #region footer styling */
+
+    footer {
+      padding: 20px;
+      background-color: var(--base-colour-2g);
+    }
+
+    footer p {
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    footer a:link, footer a:visited, footer a:active {
+      color: white;
+    }
+
+    /* #endregion */
+
+  
+    /* gear page */
+    /* #region gear main page */
+    
+    .gear-main-whole-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(240, 128, 128);
+      padding-bottom: 50px;
+    }
+    
+    .gear-main-header{
+      justify-self: center;
+      text-align: center;
+      color: white;
+      font-family: "Patrick Hand", cursive;
+    }
+
+    .gear-main-h1 {
+      margin: 30px 0px 10px 0px;
+      font-size: 100px;
+    }
+
+    .gear-main-header-text {
+      margin: 10px 0px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+    
+    .gear-main-info {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 30px;
+      margin: 15px;
+      border-radius: 30px;
+      background-color: lightblue
+    
+    }
+
+    .gear-main-grid {
+      background-color: rgb(38, 37, 34, 0.3);
+      border-radius: 30px;
+      padding: 30px;
+      width: 450px;
+
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      transition: transform 0.5s ease-in;
+      font-family: "Patrick Hand", cursive;
+    }
+
+    .gear-main-grid h3 {
+      font-size: 50px;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      
+    }
+
+     .spacer, .gear-main-icon {
+      width: 40px;
+      height: auto;
+    }
+
+    .header-contaner h3 {
+      margin: 0px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .gear-main-grid p {
+      font-size: 30px;
+      padding-top: 20px;
+    }
+
+    .gear-main-grid:hover {
+      /* change this colour later*/
+      background-color: rgba(240, 128, 128, 0.6);
+      transform: translateY(-15px);
+    }
+
+
+    .gear-main-rackets, .gear-main-shuttlecock, .gear-main-shoes {
+      /* this one doesn't work probably as it only affects 1 item right now
+      justify-content: center; */
+      display: grid;
+      justify-items: center;
+    }
+
+
+    .gear-main-image-frame {
+      display: flex;
+      width: 350px;
+      height: 350px;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 20px;
+      
+    }
+
+    .gear-main-img {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+
+    }
+
+
+    /* #endregion */
+    
+
+    /* filler text --------------------------------------------------- */
+
+
+
+    /* gear page-1 */
+    /* #region gear rackets */
+
+
+    /* #endregion */
+
+    /* gear page-2 */
+    /* #region gear shuttlecock */
+
+
+    /* #endregion */
+
+    /* gear page-3 */
+    /* #region gear shoes */
+
+
+    /* #endregion */
+
+
+
+    /*
+
+
+    /* how-to-play page */
+    /* #region play-main page */
+
+    .play-main-whole-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(240, 128, 128);
+      padding-bottom: 50px;
+    }
+
+    .play-main-header{
+      justify-self: center;
+      text-align: center;
+      color: white;
+      font-family: "Patrick Hand", cursive;
+    }
+
+    .play-main-h1 {
+      margin: 30px 0px 10px 0px;
+      font-size: 100px;
+    }
+
+    .play-main-header-text {
+      margin: 10px 0px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .play-main-info {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 30px;
+      margin: 15px;
+      border-radius: 30px;
+      background-color: lightblue;
+    }
+
+    .play-main-grid {
+      background-color: rgb(38, 37, 34, 0.3);
+      border-radius: 30px;
+      padding: 30px;
+      width: 450px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      transition: transform 0.5s ease-in;
+      font-family: "Patrick Hand", cursive;
+    }
+
+    .play-main-grid h3 {
+      font-size: 50px;
+    }
+    .play-main-grid p {
+      font-size: 30px;
+    }
+
+    .play-main-grid ul{
+      padding: 10px 20px;
+    }
+
+    .play-main-grid li {
+      font-size: 22px;
+      text-align: start;
+      font-weight: 500;
+    }
+
+    .play-main-grid:hover {
+      /* change this color later */
+      background-color: rgba(240, 128, 128, 0.6);
+      transform: translateY(-15px);
+    }
+
+    .play-main-shots, .play-main-footwork, .play-main-rules {
+      display: grid;
+      justify-items: center;
+    }
+
+    .play-main-image-frame {
+      display: flex;
+      width: 350px;
+      height: 350px;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .play-main-img {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+   
+    /* end region */
+    
+    /* famous atheletes page */
+    /* #region famous athletes */
+    
+    
+    nav ul {
+      
+    }
+
+
+    /* #endregion */
+
+
+    /* colours page */ 
+    /* #region filler-colour-page */
+
+    .box-1a {
+      background-color: var(--base-colour-1a) ; 
+    }
+
+    .box-2a {
+      background-color: var(--base-colour-2a);
+    }
+    
+    .box-3a {
+      background-color: var(--base-colour-3a);
+    }
+
+    .box-4a {
+      background-color: var(--base-colour-4a);
+    }
+
+    .box-5a {
+      background-color: var(--base-colour-5a);
+    }
+    
+    
+    /* filler for space */
+
+
+    .box-1b {
+      background-color: var(--base-colour-1b);
+    }
+
+    .box-2b {
+      background-color: var(--base-colour-2b);
+    }
+    
+    .box-3b {
+      background-color: var(--base-colour-3b);
+    }
+    
+    .box-4b {
+      background-color: var(--base-colour-4b);
+    }
+
+    /* filler for space */
+    
+    .box-1c {
+      background-color: var(--base-colour-1c);
+    }
+
+    .box-2c {
+      background-color: var(--base-colour-2c);
+    }
+
+    .box-3c {
+      background-color: var(--base-colour-3c);
+    }
+    
+    .box-4c {
+      background-color: var(--base-colour-4c);
+    }
+    
+    .box-5c {
+      background-color: var(--base-colour-5c);
+    }
+
+      /* filler for space */
+    
+    .box-1d {
+      background-color: var(--base-colour-1d);
+    }
+
+    .box-2d {
+      background-color: var(--base-colour-2d);
+    }
+
+    .box-3d {
+      background-color: var(--base-colour-3d);
+    }
+    
+    .box-4d {
+      background-color: var(--base-colour-4d);
+    }
+    
+    .box-5d {
+      background-color: var(--base-colour-5d);
+    }
+
+    /* filler for space */
+    
+    .box-1e {
+      background-color: var(--base-colour-1e);
+    }
+
+    .box-2e {
+      background-color: var(--base-colour-2e);
+    }
+
+    .box-3e {
+      background-color: var(--base-colour-3e);
+    }
+    
+    .box-4e {
+      background-color: var(--base-colour-4e);
+    }
+    
+    .box-5e {
+      background-color: var(--base-colour-5e);
+    }
+
+    /* filler for space */
+
+    .box-1f {
+      background-color: var(--base-colour-1f);
+    }
+
+    .box-2f {
+      background-color: var(--base-colour-2f);
+    }
+
+    .box-3f {
+      background-color: var(--base-colour-3f);
+    }
+    
+    .box-4f {
+      background-color: var(--base-colour-4f);
+    }
+    
+    .box-5f {
+      background-color: var(--base-colour-5f);
+    }
+
+    /* filler for space */
+
+    .box-1g {
+      background-color: var(--base-colour-1g);
+    }
+
+    .box-2g {
+      background-color: var(--base-colour-2g);
+    }
+
+    .box-3g {
+      background-color: var(--base-colour-3g);
+    }
+    
+    .box-4g {
+      background-color: var(--base-colour-4g);
+    }
+    
+    .box-5g {
+      background-color: var(--base-colour-5g);
+    }
+
+    /* #endregion */
+
+
+
+
+    /* @media stuff/responsive design */
+    /* #region @media stuff */
+
+    /*  */
+
+    /* #endregion*/
+
+
+
+
+

@@ -1,0 +1,139 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+		<!-- should do all this for one page then copy to every other page -->
+		<title> badminton website </title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		
+		<!-- space for fonts + linking features -->
+		<!-- page icon -->
+		<link rel="icon" type="image/png" href="images/badminton-img.png">
+		<!-- font linking -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+		<!-- fonts -->
+		<!-- probably not needed due to import on the main style.css file
+		<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+		-->
+
+	</head>
+
+
+	<body>
+		<!-- might include a div to surround the header, main, and footer values-->
+			<header class="section-header">
+				<p> badminton website </p>
+			</header>
+      <!--the navbar, try to make it always visibile when scrolling using the sticky function-->
+      <nav id="navbar">
+        <!--
+				<a href="--"> filler space above the navbar that also moves </a> -->
+				<ul class="nav-links"> 
+					<!-- might need to make a grid so each box is equally spaced -->
+					<li class="box-nav-1a"><a href="index.html" class="page" id="home"> home </a></li>
+					<!-- filler pages for now-->
+					<li class="box-nav-2a"><a href="gear.html" class="page drop-button" id="--"> gear </a>
+						<div class="dropdown-content">
+							<a href="gear-1.html"> rackets </a>
+							<a href="gear-2.html"> shuttles </a>
+							<a href="gear-3.html"> shoes </a>
+						</div>
+					</li>
+					<li class="box-nav-3a"><a href="how-to-play.html" class="active page" id="--"> how to play </a></li>
+					<li class="box-nav-4a"><a href="famous-athletes.html" class="page" id="--"> famous athletes </a></li>
+					<li class="box-nav-5a"><a href="competitions.html" class="page" id="--"> competitions </a></li>
+					<!-- end of filer pages for now-->
+					<li class="box-nav-8a"><a href="colours.html" class="page" id="--"> colours palette </a></li>
+				</ul>
+      </nav>
+
+		
+			<main class="play-main-whole-box">
+				<div class="play-main-header">
+					<h1 class="play-main-h1"> 
+						how to play
+					</h1>
+					<p class="play-main-header-text"> for more info, click on the icons </p>
+
+				</div>
+				<div class="play-main-info">
+					<div class="play-main-grid">
+						<div class="play-main-shots">
+							<div class="header-container"> 
+								<span class="spacer"> </span>
+								<h3> Shots </h3>
+								<a href="how-to-play1.html"><img src="icons/badminton-racket-icon.png" class="gear-main-icon"> </a>
+							</div>
+							<ul>
+								<li> Clear - a high shot towards the opponent's backcourt </li> 
+								<li> Drop - a soft shot to land behind the opponent's net </li>
+								<li> Lift - a defensive shot to the opponent's backcourt </li>
+								<li> Smash - a high power shot aimed downwards for a kill </li>
+								<li> Drive - a flat shot played straight across the net </li>
+								<li> Net - a tight shot to bounce the shuttle over the net </li>
+							</ul>
+							<br>
+							<div class="play-main-image-frame">
+								<img src="images/badminton-lee-chong-wei-jump-smash" alt="" class="play-main-img" id="">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="play-main-grid">
+						<div class="play-main-footwork">
+							<div class="header-container"> 
+								<span class="spacer"> </span>
+								<h3> Footwork </h3>
+								<a href="how-to-play2.html"><img src="icons/badminton-shoes-icon.png" class="gear-main-icon"> </a>
+							</div>
+							<ul>
+								<li> Split step - a small movement enabling a change in direction early </li> 
+								<li> Lunge - a movement of leg when moving forward the knee up to 90 degrees </li> 
+								<li> Chasse step - a movement of bringing your leg towards the other leg </li> 
+								<li> Pivot - a small moving action to turn your body sideways </li> 
+								<li> Dive - a hail mary action to return a difficult shot </li>
+							</ul>
+							<br>
+							<div class="play-main-image-frame">
+								<img src="images/badminton-lee-chong-wei-jump-footwork" alt="" class="play-main-img" id="">
+							</div>
+						</div>
+					</div>
+
+
+					<div class="play-main-grid">
+						<div class="play-main-rules">
+							<div class="header-container"> 
+								<span class="spacer"> </span>
+								<h3> Rules </h3>
+								<a href="how-to-play3.html"><img src="icons/badminton-rules-icon.png" class="gear-main-icon"> </a>
+							</div>
+							<ul>
+								<li> Serves - the winner serves diagonally, serve on right when points are even and serve on left when points are odd </li> 
+								<li> Points - first to 21 wins, with win by 2 at 20 points for each player </li> 
+								<li> Hits - can only hit the shuttlecock once </li>
+								<li> Single courts - the innermost sidelines, and the whole backcourt  </li> 
+								<li> Double court - the outermost sidelines, and the whole backcourt after serving </li> 
+							</ul>
+							<br>
+							<div class="play-main-image-frame">
+								<img src="images/badminton-court-layout.png" alt="badminton court" class="play-main-img" id="">
+							</div>
+						</div>
+					</div>
+
+        </div>
+			</main>
+
+
+			<footer>
+				<p>&copy; Badminton Website </p>
+				<p><a href="https://www.flaticon.com/free-icons/badminton" title="badminton icons"> Badminton icons created by Astatine - Flaticon</a> </p>
+			</footer>
+	</body>
+
+
+</html>
