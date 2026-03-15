@@ -18,6 +18,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 		-->
 
+		<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
+		integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 	</head>
 
 	<body>
@@ -42,7 +46,7 @@
 					</li>
 					<li class="box-nav-3a"><a href="how-to-play.html" class="page" id="--"> how to play </a></li>
 					<li class="box-nav-4a"><a href="famous-athletes.html" class="active page" id="--"> famous athletes </a></li>
-					<li class="box-nav-5a"><a href="competitions.html" class="page" id="--"> competitions </a></li>
+					<!-- <li class="box-nav-5a"><a href="competitions.html" class="page" id="--"> competitions </a></li> -->
 					<!-- end of filer pages for now-->
 					<li class="box-nav-8a"><a href="colours.html" class="page" id="--"> colours palette </a></li>
 				</ul>
@@ -64,36 +68,88 @@
 
 				<div>
 					<p> Top male atheletes </p>
-					<div>
-						<div>
-							<div>
-							<span class="spacer"> </span>
-								<h3> Viktor Axelsen </h3>
+					
+					
+					<div class="swiper-container">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="athlete-text">
+									<h3> Lee Chong Wei </h3>
+									<ul> 
+										<li> Former Malaysian badminton player </li>
+										<li> As a singles player, he was ranked first worldwide for 349 weeks. </li>
+										<li> Triple silver medalist at the Olympic Games  </li>
+									</ul>
+								</div>
+								<div class="athlete-image">
+									<img src="images/athletes/athlete-lee-chong-wei.png" alt="Lee Chong Wei">
+								</div>
 							</div>
 
-
-							<br>
-							<div>
-
+							<div class="swiper-slide">
+								<div class="athlete-text">
+									<h3>  </h3>
+									<ul> 
+										<li> </li>
+										<li> </li>
+										<li> </li>
+									</ul>
+								</div>
+								<div class="athlete-image">
+									<img src="" alt="">
+								</div>
 							</div>
+
+							<div class="swiper-slide">
+								<div class="athlete-text">
+									<h3>  </h3>
+									<ul> 
+										<li> </li>
+										<li> </li>
+										<li> </li>
+									</ul>
+								</div>
+								<div class="athlete-image">
+									<img src="" alt="">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="athlete-text">
+									<h3>  </h3>
+									<ul> 
+										<li> </li>
+										<li> </li>
+										<li> </li>
+									</ul>
+								</div>
+								<div class="athlete-image">
+									<img src="" alt="">
+								</div>
+							</div>
+
+							<div class="swiper-slide">
+								<div class="athlete-text">
+									<h3>  </h3>
+									<ul> 
+										<li> </li>
+										<li> </li>
+										<li> </li>
+									</ul>
+								</div>
+								<div class="athlete-image">
+									<img src="" alt="">
+								</div>
+							</div>
+
 						</div>
+						<!-- the buttons were copied from chatgpt -->
+						<button class="prev" onclick="moveSlide(-1)" style="position:absolute; left:10px; top:50%;">❮</button>
+  					<button class="next" onclick="moveSlide(1)" style="position:absolute; right:10px; top:50%;">❯</button>
 					</div>
+				</div>
 
-					<div>
-						<div>
-							<div>
-							<span class="spacer"> </span>
-								<h3>  </h3>
-							</div>
-
-
-							<br>
-							<div>
-
-							</div>
-						</div>
-					</div>
-        </div>
+			
 
 				<!-- <div>
 					<h1> 
@@ -142,6 +198,11 @@
 				<p>&copy; Badminton Website </p>
 				<p><a href="https://www.flaticon.com/free-icons/badminton" title="badminton icons"> Badminton icons created by Astatine - Flaticon</a> </p>
 			</footer>
+
+			<!-- Swiper JS -->
+			<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+			<script src="javascript.js"></script>
+
 	</body>
 
 

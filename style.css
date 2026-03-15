@@ -15,19 +15,19 @@
   /* should design the website before screwing up the looks */
   /* change margin and padding to 0px afterwards */
   
-  
+  /*
   margin: 2px;
   padding: 2px;
   box-sizing: border-box;
   border: 2px solid red;
+  */
   
   
-  /*
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   border: 0px solid black;
-  */
+  
   
 }
 
@@ -143,7 +143,7 @@
       background-color: var(--base-colour-2g);
       display: grid;
       /* this needs to be adjusted for the final bits/editing */
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       /* this padding puts distance around the listed items */
       padding: 0px;
     }
@@ -495,7 +495,7 @@
     }
 
     .play-main-grid:hover {
-      /* change this color later */
+      
       background-color: rgba(240, 128, 128, 0.6);
       transform: translateY(-15px);
     }
@@ -525,7 +525,7 @@
       object-fit: contain;
     }
    
-    /* end region */
+    /* #endregion */
     
     /* famous atheletes page */
     /* #region famous athletes */
@@ -535,6 +535,78 @@
       
     }
 
+    .swiper-container {
+      position: relative;
+      width: 90%;
+      max-width: 1000px;
+      margin: 50px auto;
+      overflow: hidden;
+      border-radius: 15px;
+      box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      width: 100%;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .swiper-slide {
+      min-width: 100%;
+      display: flex;
+      height: 450px; 
+      background: lightpink;
+    }
+
+    .athlete-text {
+      flex: 0 0 50%;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: lightgreen;
+    }
+
+    .athlete-text h3 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+      color: red;
+    }
+
+    .athlete-text li {
+      line-height: 1.6;
+      color: grey;
+    }
+
+    .athlete-image {
+      flex: 0 0 50%;
+      background: lightblue;
+    }
+
+    .image-content img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+
+    /* copied from chatgpt */
+    /* Navigation Buttons */
+    .prev, .next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.8);
+      border: none;
+      padding: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 10;
+    }
+
+    .next { right: 0; }
+    .prev { left: 0; }
 
     /* #endregion */
 
