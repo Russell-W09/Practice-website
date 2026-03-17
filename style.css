@@ -22,12 +22,12 @@
   border: 2px solid red;
   
   
-  /*
+  
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   border: 0px solid black;
-  */
+  
   
 }
 
@@ -143,7 +143,7 @@
       background-color: var(--base-colour-2g);
       display: grid;
       /* this needs to be adjusted for the final bits/editing */
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       /* this padding puts distance around the listed items */
       padding: 0px;
     }
@@ -270,7 +270,129 @@
 
     /* #endregion */
 
-  
+    /* home-page */
+    /* #region home page */
+    
+    .home-whole-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: rgb(240, 128, 128);
+      padding-bottom: 50px;
+    }
+
+    .home-header {
+      justify-self: center;
+      text-align: center;
+      color: white;
+      font-family: "Patrick Hand", cursive;
+    }
+
+    .home-h1 {
+      margin: 30px 0px 10px 0px;
+      font-size: 100px;
+    }
+
+    .home-header-text {
+      margin: 10px 0px;
+      font-size: 50px;
+      font-weight: 700;
+    }
+
+    .home-info {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      justify-content: center;
+      gap: 30px;
+      padding: 40px 30px;
+      margin: 15px;
+      border-radius: 30px;
+      background-color: lightblue
+    }
+    
+    .home-info a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .home-info a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    .home-grid {
+      background-color: rgb(38, 37, 34, 0.3);
+      border-radius: 30px;
+      padding: 30px;
+      width: 450px;
+
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      transition: transform 0.5s ease-in;
+      font-family: "Patrick Hand", cursive;
+    }
+
+    .home-grid h3 {
+      font-size: 50px;
+    }
+
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
+
+    .spacer, .home-main-icon {
+      width: 40px;
+      height: auto;
+    }
+
+
+    .header-container h3 {
+      margin: 0px;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .home-grid p {
+      font-size: 30px;
+      padding-top: 20px;
+    }
+
+    .home-grid:hover {
+      background-color: rgba(240, 128, 128, 0.6);
+      transform: translateY(-15px);
+    }
+    
+    .home-image-frame {
+      display: flex;
+      width: 350px;
+      height: 350px;
+      border-radius: 20px;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      margin-top: 20px;
+    }
+
+    .home-img {
+      display: block;
+      justify-content: center;
+      align-items: center;
+      max-width: 90%;
+      max-height: 90%;
+      object-fit: contain;
+    }
+
+    /* #endregion */
+
+
+
     /* gear page */
     /* #region gear main page */
     
@@ -340,7 +462,7 @@
       
     }
 
-     .spacer, .gear-main-icon {
+    .spacer, .gear-main-icon {
       width: 40px;
       height: auto;
     }
