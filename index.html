@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
-		<!-- should do all this for one page then copy to every other page -->
 		<title> badminton website </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<!-- space for fonts + linking features -->
 		<!-- page icon -->
@@ -11,15 +12,7 @@
 		<!-- font linking -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-		<!-- fonts -->
-		<!-- probably not needed due to import on the main style.css file
-		<link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-		-->
-
 	</head>
-
 
 	<body>
 		<!-- might include a div to surround the header, main, and footer values-->
@@ -43,45 +36,73 @@
 					</li>
 					<li class="box-nav-3a"><a href="how-to-play.html" class="page" id="--"> how to play </a></li>
 					<li class="box-nav-4a"><a href="famous-athletes.html" class="page" id="--"> famous athletes </a></li>
-					<li class="box-nav-5a"><a href="competitions.html" class="page" id="--"> competitions </a></li>
+					<!-- <li class="box-nav-5a"><a href="competitions.html" class="page" id="--"> competitions </a></li> -->
 					<!-- end of filer pages for now-->
-					<li class="box-nav-8a"><a href="colours.html" class="page" id="--"> colours palette </a></li>
+					<!-- <li class="box-nav-8a"><a href="colours.html" class="page" id="--"> colours palette </a></li> -->
 				</ul>
       </nav>
 
 		
-			<main>
-				<div>
-					<h1> 
-						Badminton
+			<main class="home-whole-box">
+				<div class="home-header">
+					<h1 class="home-h1"> 
+						home page
 					</h1>
-
-
+					<p class="home-header-text"> click on the boxes or use the navigation bar to navigate </p>
 				</div>
-				<div>
+
+				<div class="home-info">
+					<!-- box 1 - left -->
+					<a href="gear.html">
+					<div class="home-grid">
+						<div class="home-box-1"> 
+							<div class="header-container">
+								<span class="spacer"></span>
+								<h3> Gear </h3>
+								<img src="icons/badminton-racket-icon.png" class="home-main-icon">
+							</div>
+							<p> Some of the basic gear </p>
+						</div>
+					</div>
+					</a>
 					
+					<!-- box 2 - middle -->
+					<a href="how-to-play.html">
+					<div class="home-grid">
+						<div class="home-box-2"> 
+							<div class="header-container">
+								<span class="spacer"></span>
+								<h3> How to play </h3>
+								<img src="icons/badminton-rules-icon.png" class="home-main-icon">
+							</div>
+							<p> Learn the basics of badminton </p>
+						</div>
+					</div>
+					</a>
 
-
-
-
-
+					<!-- box 3 - right -->
+					<a href="famous-athletes.html">
+					<div class="home-grid">
+						<div class="home-box-3"> 
+							<div class="header-container">
+								<span class="spacer"></span>
+								<h3> Athletes </h3>
+								<img src="icons/badminton-person-icon.png" class="home-main-icon">
+							</div>
+							<p> Look at some of the top players </p>
+						</div>
+					</div>
+					</a>
         </div>
-
-
-
-
-
-
-
-
-
-
 			</main>
 
 
 			<footer>
 				<p>&copy; Badminton Website </p>
 				<p><a href="https://www.flaticon.com/free-icons/badminton" title="badminton icons"> Badminton icons created by Astatine - Flaticon</a> </p>
+				<p><a href="https://www.flaticon.com/free-icons/rule" title="rule icons">Rule icons created by Nhor Phai - Flaticon</a> </p>
+				<p><a href="https://www.flaticon.com/free-icons/footwear" title="footwear icons">Footwear icons created by Smashicons - Flaticon</a></p>
+				<p><a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Freepik - Flaticon</a></p>
 			</footer>
 	</body>
 
