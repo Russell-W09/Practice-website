@@ -21,18 +21,13 @@
   box-sizing: border-box;
   border: 2px solid red;
   */
-  
-  
-<<<<<<< HEAD
-  
-=======
->>>>>>> web-design
+
+  /*
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   border: 0px solid black;
-  
-  
+  */
 }
 
 
@@ -147,11 +142,7 @@
       background-color: var(--base-colour-2g);
       display: grid;
       /* this needs to be adjusted for the final bits/editing */
-<<<<<<< HEAD
       grid-template-columns: repeat(4, 1fr);
-=======
-      grid-template-columns: repeat(5, 1fr);
->>>>>>> web-design
       /* this padding puts distance around the listed items */
       padding: 0px;
     }
